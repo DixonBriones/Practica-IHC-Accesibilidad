@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>Mi Portafolio</title>
+    <link href="styles.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <img tabindex="0" src="images/dixon.jpeg" class="header-img" alt="Foto de Dixon Briones"> 
+      <div tabindex="0" class="header">Dixon Elian Briones Gutierrez</div>
+      <div tabindex="0" class="subtitle">Curso: 4º "A"</div>
+      <nav>
+        <ul class="navigation">
+          <li class="nav-item" tabindex="0"><a href="#AcercaDe">Acerca de</a></li>
+          <li class="nav-item" tabindex="0"><a href="#Proyectos">Proyectos</a></li>
+          <li class="nav-item" tabindex="0"><a href="#Contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+
+      <section>
+        <a name="AcercaDe"></a>
+        <h2 tabindex="0" class="header"> Acerca de</h2>
+        <div class="intro">
+          <p class="intro">
+          Hola! Mi nombre es Dixon 👋 Soy Ecuatoriano, tengo 20 años, amo los perros y tambien crear
+          cosas lindas para la web. Soy estudiante de la Facultad de Ciecias Informáticas 
+          en la Uleam, actualmente curso el cuarto semestre de la carrera Tecnologías de 
+          la Información.
+          </p>
+        </div> 
+
+        <ul class="social-media">
+          <li>
+            <a href="https://twitter.com/" target="_blank">
+              <img src="images/twitter.png" alt="Twitter de Dixon Briones"/>
+              <p class="social-link-text">Twitter</p>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com" target="_blank">
+              <img src="images/github-logo.png" alt="Github de Dixon Briones"/>
+              <p class="social-link-text">Github</p>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com" target="_blank">
+              <img src="images/linkedin.png" alt="Linkedin de Dixon Briones"/>
+              <p class="social-link-text">Linkedin</p>
+            </a>
+          </li>
+        </ul>
+      </section>
+      
+      <section>
+        <a name="Proyectos"></a>
+        <h2 class="header" tabindex="0">Mis Proyectos</h2>
+        <main class="carousel">
+          <button class="arrow arrow-left" aria-label="Botón atras"></button>
+          <ul class="window">
+            <ul class="project-container">
+              <li class="project1-container"><button class="project1"><img
+                src="images/projecto1.jpg" class="project" alt="Mi primer
+                proyecto"></button></li>
+
+              <li class="project2-container"><button class="project2"><img
+                src="images/projecto2.jpg" class="project" alt="Mi segundo
+                proyecto"></button></li>
+
+              <li class="project3-container"><button class="project3"><img
+                src="images/projecto3.jpg" class="project" alt="Mi tercer
+                proyecto"></button></li>
+
+              <li class="project4-container" aria-hidden="true"><button class="project4"
+                tabindex="-1"><img src="images/projecto4.jpg" class="project" alt="Mi cuarto
+                proyecto"></button></li>
+
+              <li class="project5-container" aria-hidden="true"><button class="project5"
+                tabindex="-1"><img src="images/projecto5.jpg" class="project" alt="Mi quinto
+                proyecto"></button></li>
+            </ul>
+          </ul>
+          <button class="arrow arrow-right" aria-label="Botón adelante"></button>
+        </main>
+      </section>
+    </main>
+    
+    <footer class="contact-section">
+      <a name="Contacto"></a>
+      <h2 tabindex="0" class="header">Contacto</h2>
+      <p class="intro">Para manderme un mensaje puedes usar el formulario que sigue</p>
+      <form class="form-container">
+        <label class="form-label">Nombre</label><input type="text" arialabel="nombre" id="name"/>
+        <span id="name-error" aria-live="assertive"></span><br/>
+        <label class="form-label">Correo</label><input type="text" arialabel="correo" /> <br />
+        <label class="message-input">Mensaje </label><input class="inputMen" type="text"/><br/>
+        <button class="send-button">Enviar</button>
+      </form>
+    </footer>
+
+    <div class="notification" aria-live="assertive">El formulario fue enviado sin errores</div>
+    <div class="modal-container">
+      <div class="modal">
+        <h2 class="header" id="modal-header" tabindex="0">Ejemplo de un proyecto</h2>
+        <img src="images/projecto1.jpg" class="modal-project-image" alt="Imagen proyecto"/>
+        <button class="modal-button">Cerrar</button>
+      </div>
+    </div>
+    <script src="index.js" type="text/javascript"></script>
+  </body>
+</html>
